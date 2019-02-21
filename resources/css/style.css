@@ -67,6 +67,41 @@ header .container {
   justify-content: center;
 }
 
+/*Turn off mobile Navigation*/
+
+.header--nav--mobile {
+  display: none;
+}
+
+/*header navigation media query*/
+
+
+@media only screen and (max-width: 480px) {
+
+.header--nav, .header--logo {
+  display: none;
+}
+
+.academy , .colmar {
+  display: none;
+}
+
+.header--nav--mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  flex-grow: 1;
+}
+
+.icon img:hover {
+  opacity: 0.5;
+}
+
+}
+
+
 /*Main Banner Styles
 
 .main--banner {
@@ -97,6 +132,24 @@ header .container {
 .right-column {
   width: 40%;
   background-color: lightgrey;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+.main--banner .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-column , .right-column {
+  width: 100%;
+  padding: 0px 0px;
+
+}
+
 }
 
 
@@ -172,6 +225,10 @@ header .container {
   flex-direction: column;
 }
 
+.right-column .img--mobile {
+  display: none;
+}
+
 .box {
   display: flex;
   width: 100%;
@@ -213,6 +270,31 @@ header .container {
 /*make the back ground of the third info box lioght grey*/
 .third-info.box {
   background-color: lightgrey;
+}
+
+@media only screen and (max-width: 480px) {
+
+.information .left-column {
+  display: none;
+}
+
+.tagline {
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+}
+
+.tagline a {
+  width: 50%;
+}
+
+.tagline h1 {
+  align-items: center;
+}
+
+
 }
 
 /*Course Styles*/
@@ -315,6 +397,23 @@ header .container {
   font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 750px) {
+
+.thesis .right-column, .thesis .urban {
+  display: none;
+}
+
+.thesis h2 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+
+
+
+}
+
+
 
 
 
@@ -336,4 +435,12 @@ footer .container {
   flex-grow: 1;
   padding-right: 24px;
   text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+
+.footer--nav {
+  display: none;
+}
+
 }
